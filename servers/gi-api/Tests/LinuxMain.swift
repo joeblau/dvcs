@@ -1,7 +1,7 @@
 import XCTest
 
-import gi_ioTests
+import gi_apiTests
 
 var tests = [XCTestCaseEntry]()
-tests += gi_ioTests.allTests()
+tests += gi_apiTests.allTests()
 XCTMain(tests)

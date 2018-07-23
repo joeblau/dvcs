@@ -9,9 +9,9 @@
 import Foundation
 
 public struct TemplateController { //}: ReadOnlyTemplateManagerProtocol {
-    internal var order = Order()
-    internal var count = 0
-    internal var templates = Templates()
+    public var order = Order()
+    public var templates = Templates()
+    fileprivate var count = 0
 
     /// Create Template Controller
     ///

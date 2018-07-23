@@ -10,18 +10,18 @@ let package = Package(
         ),
     ],
     targets: [
-        // Gitignore.io App
+        // gi API
         .target(
-            name: "GiIO",
+            name: "giAPI",
             dependencies: ["GitignoreEngineKit", "Vapor"],
-            path: "./servers/gi-io/Sources"
+            path: "./servers/gi-api/Sources"
         ),
         .testTarget(
-            name: "GiIOTests",
-            dependencies: ["GiIO"],
-            path: "./servers/gi-io/Tests"
+            name: "giAPITests",
+            dependencies: ["giAPI"],
+            path: "./servers/gi-api/Tests"
         ),
-        // Gitignore.io Engine
+        // gitignore Engine
         .target(
             name: "GitignoreEngineKit",
             dependencies: [],

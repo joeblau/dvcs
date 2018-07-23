@@ -8,4 +8,3 @@
 import Foundation
 
 public typealias Templates = Dictionary<String, Template>
-

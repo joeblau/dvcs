@@ -8,13 +8,14 @@
 import Foundation
 
 public struct Template: Templating {
-    var key: String
-    var name: String
-    var fileName: String
-    var contents: String
-    var selected: Bool = false
+    public var key: String
+    public var name: String
+    public var fileName: String
+    public var contents: String
+    public var selected: Bool = false
 }
 
+extension Template: Codable {}
 
 extension Template: CustomStringConvertible, CustomDebugStringConvertible {
     public var description: String {

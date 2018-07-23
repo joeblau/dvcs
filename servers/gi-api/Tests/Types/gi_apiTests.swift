@@ -1,7 +1,7 @@
 import XCTest
 import class Foundation.Bundle
 
-final class gi_ioTests: XCTestCase {
+final class gi_apiTests: XCTestCase {
     func testExample() throws {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct
@@ -12,7 +12,7 @@ final class gi_ioTests: XCTestCase {
             return
         }
 
-        let fooBinary = productsDirectory.appendingPathComponent("gi_io")
+        let fooBinary = productsDirectory.appendingPathComponent("gi_api")
 
         let process = Process()
         process.executableURL = fooBinary
