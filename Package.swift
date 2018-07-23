@@ -2,7 +2,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "Systems",
+    name: "DVCS",
     dependencies: [
         .package(
             url: "https://github.com/vapor/vapor.git",
