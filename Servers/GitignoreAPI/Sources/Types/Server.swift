@@ -35,7 +35,7 @@ internal class Gitignore {
     /// Register your application's routes here.
     private func routes(_ router: Router, env: Environment) throws {
         let dataDirectory = URL(fileURLWithPath: DirectoryConfig.detect().workDir, isDirectory: true)
-            .absoluteURL.appendingPathComponent("data", isDirectory: true)
+            .absoluteURL.appendingPathComponent("Data", isDirectory: true)
             .absoluteURL.appendingPathComponent("gitignore", isDirectory: true)
             .absoluteURL.appendingPathComponent("templates", isDirectory: true)
         let orderFile = dataDirectory.absoluteURL.appendingPathComponent("order", isDirectory: false)
