@@ -6,31 +6,31 @@ let package = Package(
     dependencies: [
         .package(
             url: "https://github.com/vapor/vapor.git",
-            from: "3.0.0"
+            from: "3.1.0"
         ),
     ],
     targets: [
         // gi API
         .target(
-            name: "giAPI",
+            name: "GitignoreAPI",
             dependencies: ["GitignoreEngineKit", "Vapor"],
-            path: "./servers/gi-api/Sources"
+            path: "./Servers/GitignoreAPI/Sources"
         ),
         .testTarget(
-            name: "giAPITests",
-            dependencies: ["giAPI"],
-            path: "./servers/gi-api/Tests"
+            name: "GitignoreAPITests",
+            dependencies: ["GitignoreAPI"],
+            path: "./Servers/GitignoreAPI/Tests"
         ),
         // gitignore Engine
         .target(
             name: "GitignoreEngineKit",
             dependencies: [],
-            path: "./libraries/gitignore-engine-kit/Sources"
+            path: "./Libraries/GitignoreEngineKit/Sources"
         ),
         .testTarget(
             name: "GitignoreEngineKitTests",
             dependencies: ["GitignoreEngineKit"],
-            path: "./libraries/gitignore-engine-kit/Tests"
+            path: "./Libraries/GitignoreEngineKit/Tests"
         ),
     ]
 )
