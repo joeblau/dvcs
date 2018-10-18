@@ -14,23 +14,23 @@ let package = Package(
         .target(
             name: "GitignoreAPI",
             dependencies: ["GitignoreEngineKit", "Vapor"],
-            path: "./Servers/GitignoreAPI/Sources"
+            path: "./Sources/Servers/GitignoreAPI/Sources"
         ),
         .testTarget(
             name: "GitignoreAPITests",
             dependencies: ["GitignoreAPI"],
-            path: "./Servers/GitignoreAPI/Tests"
+            path: "./Tests/Servers/GitignoreAPI/Tests"
         ),
         // gitignore Engine
         .target(
             name: "GitignoreEngineKit",
             dependencies: [],
-            path: "./Libraries/GitignoreEngineKit/Sources"
+            path: "./Sources/Libraries/GitignoreEngineKit/Sources"
         ),
         .testTarget(
             name: "GitignoreEngineKitTests",
             dependencies: ["GitignoreEngineKit"],
-            path: "./Libraries/GitignoreEngineKit/Tests"
+            path: "./Tests/Libraries/GitignoreEngineKit/Tests"
         ),
     ]
 )

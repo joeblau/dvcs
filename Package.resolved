@@ -15,8 +15,8 @@
         "repositoryURL": "https://github.com/vapor/core.git",
         "state": {
           "branch": null,
-          "revision": "eb876a758733166a4fb20f3f0a17b480c5ea563e",
-          "version": "3.4.3"
+          "revision": "96ce86ebf9198328795c4b9cb711489460be083c",
+          "version": "3.4.4"
         }
       },
       {
@@ -42,8 +42,8 @@
         "repositoryURL": "https://github.com/vapor/http.git",
         "state": {
           "branch": null,
-          "revision": "9e3eff9dfa4df7fc282bf27f801c72b3ffbfd984",
-          "version": "3.1.4"
+          "revision": "272b22be8cb3364e42a4701c2e0676e37480ec5a",
+          "version": "3.1.5"
         }
       },
       {
@@ -150,8 +150,8 @@
         "repositoryURL": "https://github.com/vapor/websocket.git",
         "state": {
           "branch": null,
-          "revision": "149af03348f60ac8b84defdf277112d62fd8c704",
-          "version": "1.0.2"
+          "revision": "eb4277f75f1d96a3d15c852cdd89af1799093dcd",
+          "version": "1.1.0"
         }
       }
     ]
