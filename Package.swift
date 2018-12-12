@@ -8,12 +8,16 @@ let package = Package(
             url: "https://github.com/vapor/vapor.git",
             from: "3.1.0"
         ),
+        .package(
+            url: "https://github.com/ksmandersen/GoogleReporter.git",
+            from: "1.5.0"
+        ),
     ],
     targets: [
         // gi API
         .target(
             name: "GitignoreAPI",
-            dependencies: ["GitignoreEngineKit", "Vapor"],
+            dependencies: ["GitignoreEngineKit", "Vapor", "GoogleReporter"],
             path: "./Sources/Servers/GitignoreAPI/Sources"
         ),
         .testTarget(

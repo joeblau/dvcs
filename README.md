@@ -28,5 +28,5 @@ Production
 
 ```sh
 swift build --configuration release
-.build/release/Hello serve --env=production
+.build/release/GitignoreAPI serve --env=production
 ```
